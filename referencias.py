@@ -24,10 +24,6 @@ cur = conn.cursor()
 
 
 cur.executescript('''
-DROP TABLE IF EXISTS referencias;
-DROP TABLE IF EXISTS titulos;
-DROP TABLE IF EXISTS urls;
-
 CREATE TABLE IF NOT EXISTS referencias ( 
     id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE, 
     referencia TEXT UNIQUE
